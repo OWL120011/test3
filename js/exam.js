@@ -76,20 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             confirmModal.style.display = 'flex';
         }
     });
-
-    confirmYesBtn.addEventListener('click', () => {
-        if (fileToDownload) {
-            const a = document.createElement('a');
-            a.href = fileToDownload;
-            a.download = fileToDownload.split('/').pop();
-            a.style.display = 'none';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            confirmModal.style.display = 'none'
-        }
-    });
-
+    
     confirmYesBtn.addEventListener('click', () => {
         if (fileToDownload) {
             const a = document.createElement('a');
