@@ -180,7 +180,21 @@ body {
         display: none;
     }
     .mobile-menu-icon {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        padding: 8px 12px;
+        border-radius: 12px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        
+        top: 15px;
+        left: 15px; 
+    }
+    .mobile-menu-icon {
         display: flex; 
+    }
+    .mobile-menu-icon img {
+        opacity: 0.8;
     }
     .navbar.active {
         display: flex;
